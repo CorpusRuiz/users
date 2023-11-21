@@ -10,4 +10,45 @@ h1 {
   color: #333;
 }
 
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.img {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.contenedorUno {
+  background-color: white;
+  padding: 5px;
+  width: 400px;
+  display: flex;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+}
+
+.cuadrado {
+  background-color: white;
+  padding: 5px;
+  margin: 10px;
+  width: 250px;
+  height: 120px;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+}
+
+p span {
+  font-weight: bold;
+
+}
+
+p {
+  font-size: 11px;
+}
+
 
