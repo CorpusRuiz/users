@@ -9,7 +9,7 @@ function getRandomInt() {
 fetch('https://jsonplaceholder.typicode.com/users')
 .then(response => {
   if (!response.ok) {
-    return new Error('la solicitud ha fallado');
+    throw new Error('la solicitud ha fallado');
   }
   return response.json();
 })
@@ -37,7 +37,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
                  <p><span>Compañía: </span>${company.name}.</p>
                  <p><span>Dirección: </span>${address.street}, ${address.suite}, ${address.city}.</p>
              </figcaption>
-             <img class="img" src="../assets/img/${id}.jpeg" alt="Picture of ${name}">
+             <img class="img" src="./assets/img/${id}.jpeg" alt="Picture of ${name}">
          </figure>
       </li>
       `
